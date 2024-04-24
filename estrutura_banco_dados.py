@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # criar uma instância de SQLAlchemy
 app.config['SECRET_KEY'] = 'Hardflip@2626' 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///blog.db'  
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres.ihzlygsstahrhqciwhvv:hyp7Txifkd49rgnZ@aws-0-us-west-1.pooler.supabase.com:5432/postgres'  
 
 db = SQLAlchemy(app)
 db:SQLAlchemy 
